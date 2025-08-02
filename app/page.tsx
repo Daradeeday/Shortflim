@@ -230,15 +230,7 @@ export default function Component() {
         </motion.section>
 
         {/* Open Positions Section */}
-        <motion.section
-          id="positions"
-          initial="initial"
-          whileInView="whileInView"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.6 }}
-          variants={fadeInVariants}
-          className="w-full py-12 md:py-24 lg:py-32 bg-white"
-        >
+        <section >
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">ตำแหน่งที่เปิดรับ</h2>
@@ -248,12 +240,8 @@ export default function Component() {
             </div>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {roles.map((role, index) => (
-                <motion.div
-                  key={role}
-                  initial={{ scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true, amount: 0.3 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                <div
+          
                 >
                   <Card className="flex flex-col justify-between bg-cream-50 shadow-md hover:shadow-lg transition-shadow duration-300">
                     <CardHeader>
@@ -278,11 +266,11 @@ export default function Component() {
                       </Button>
                     </CardContent>
                   </Card>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
-        </motion.section>
+        </section>
 
         {/* Application Form Section */}
         <motion.section
