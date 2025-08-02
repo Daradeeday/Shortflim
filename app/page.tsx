@@ -250,7 +250,7 @@ export default function Component() {
               {roles.map((role, index) => (
                 <motion.div
                   key={role}
-                  initial={{ opacity: 0, scale: 0.9 }}
+                  initial={{ scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true, amount: 0.3 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
